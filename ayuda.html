@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Extensiones/css/style.css">
+    <link rel="stylesheet" href="Extensiones/css/ayuda.css"> <!-- Nuevo archivo CSS específico para Ayuda/Soporte -->
+    <title>Ayuda/Soporte - Cyber</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.jpg" alt="Logo del Cyber" class="logo">
+            <div class="title">
+                <h1>Cyber D@is.Net</h1>
+            </div>
+        </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="index.html">Página de Inicio</a></li>
+                    <li><a href="articulos.html">Artículos</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="envios.html">Información de Envíos</a></li>
+                    <li><a href="ayuda.html">Ayuda/Soporte</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="support-main">
+        <div class="container1">
+            <h2>Ayuda/Soporte</h2>
+            <p>Para asistencia, por favor contacta con nosotros a través del correo: anahy.lema@espoch.edu.ec o llama al  0995603476.</p>
+            
+            <h3>Redes Sociales</h3>
+            <ul>
+                <li><a href="https://www.facebook.com/david.acan.771?locale=es_LA">Facebook</a></li>
+                <li><a href="https://www.instagram.com/davi_1469/">Instagram</a></li>
+                <!-- Agrega más redes sociales según sea necesario -->
+            </ul>
+            <br>
+            <h3>Contacto de los Desarrolladores</h3>
+            <p>Correo Electrónico: anahy.lema@espoch.edu.ec</p>
+            <p>Teléfono: 0995603476</p>
+            <p>Dirección: Calle Ricardo Descalzi Y José Marpia Egas, Riobamba, Ecuador</p>
+            
+            <!-- Agregamos más información -->
+        </div>
+        
+        <div class="container2">
+            <h3>Envío de Comentarios</h3>
+            <form action="#" method="post" class="comment-form">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="comment">Comentario:</label><br>
+                <textarea id="comment" name="comment" rows="4" required></textarea><br><br>
+                
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Cyber. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        // Función para manejar el envío del formulario
+        function submitForm() {
+            // Lógica para enviar los datos (puedes agregar tu lógica aquí)
+
+            // Limpiar los campos del formulario después del envío
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('comment').value = '';
+
+            return false; // Evita el envío del formulario y la recarga de la página
+        }
+    </script>
+</body>
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="diesel-command-456816-t1"
+  agent-id="c75e87dc-c6ad-43d9-96ef-99d9a5c1699a"
+  language-code="en"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+    chat-title="bootcyber">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+  
+      --df-messenger-font-color: #003366;
+      --df-messenger-font-family: 'Segoe UI', sans-serif;
+      --df-messenger-chat-background: #e0f7fa;
+      --df-messenger-message-user-background: #b2ebf2;
+      --df-messenger-message-bot-background: #ffffff;
+      --df-messenger-send-icon: #00796b;
+      --df-messenger-input-box-color: #ffffff;
+      --df-messenger-input-placeholder-color: #777;
+      --df-messenger-border-radius: 12px;
+      --df-messenger-button-titlebar-color: #00796b;
+    }
+</style>
+</html>
